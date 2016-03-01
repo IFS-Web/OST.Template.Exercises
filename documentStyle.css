@@ -134,6 +134,9 @@ ul {
 ul li, ol li {
 	list-style-position: inside;
 }
+ul ul, ul ol, ol ul {
+	padding-left: 1rem;
+}
 
 dl {
 	margin: 0.5rem 0;
