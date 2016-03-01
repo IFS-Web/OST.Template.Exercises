@@ -108,6 +108,9 @@ th {
 	background: rgb(0, 96, 160);
 	color: white;
 }
+th a {
+	color: white;
+}
 td {
 	text-align: center;
 }
@@ -122,6 +125,7 @@ tbody th {
 
 /* lists */
 ul {
+	padding-left: 0;
 	list-style-type: circle;
 	list-style-position: inside;
 }
