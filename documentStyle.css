@@ -137,6 +137,10 @@ ul li, ol li {
 ul ul, ul ol, ol ul {
 	padding-left: 1rem;
 }
+li > pre {
+	margin: 0;
+	padding: 0;
+}
 
 dl {
 	margin: 0.5rem 0;
