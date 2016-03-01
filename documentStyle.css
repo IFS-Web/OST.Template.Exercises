@@ -126,10 +126,12 @@ tbody th {
 /* lists */
 ul {
 	padding-left: 0;
-	list-style-type: circle;
 	list-style-position: inside;
 }
-ul li {
+ul, ol {
+	list-style-type: circle;
+}
+ul li, ol li {
 	list-style-position: inside;
 }
 
