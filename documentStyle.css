@@ -170,3 +170,12 @@ dl dd {
 	border-radius: 2rem;
 	color: white;
 }
+
+
+@media print{
+	a[href]:after{
+		content:"[ " attr(href) " ]";
+		display: inline-block;
+		padding-left: 0.5rem;
+	}
+}
