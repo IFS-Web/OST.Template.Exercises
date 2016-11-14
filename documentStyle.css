@@ -132,13 +132,16 @@ ul {
 	list-style-type: circle;
 }
 ol {
-	list-style: lower-alpha;
+	list-style: upper-alpha;
 }
 ul li, ol li {
 	list-style-position: inside;
 }
-ul ul, ul ol, ol ul {
+ul ul, ul ol, ol ul, ol ol {
 	padding-left: 1rem;
+}
+ol ol {
+	list-style-type: lower-roman;
 }
 li > pre {
 	margin: 0;
