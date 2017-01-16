@@ -9,7 +9,7 @@ See http://www.git-scm.com/book/en/v2/Git-Tools-Submodules
 
 ```shell
 # use
-git submodule add https://github.com/wasabideveloper/HSR.Template.Exercises.git
+git submodule add https://github.com/IFS-Web/HSR.Template.Exercises.git
 # update
 git submodule update
 ```
