@@ -1,3 +1,9 @@
+:root {
+	--main-color: #8c195f;
+	--solution-primary: seagreen;
+	--solution-secondary: lightgreen;
+}
+
 html, body {
 	padding: 0;
 	margin: 0;
@@ -17,7 +23,7 @@ body {
 /* headings */
 h1 {
 	color: white;
-	background: rgb(0, 96, 160);
+	background: var(--main-color);
 	padding: 1rem;
 	margin: -1rem -1rem 1rem -1rem;
 
@@ -44,22 +50,17 @@ h2:before {
 /* solutions */
 .solution {
 	background: lightcyan;
-	border: 0.1rem solid seagreen;
+	border: 0.1rem solid var(--solution-primary);
 	border-radius: 0.2rem;
 	margin: 0.5rem;
 	clear: both;
 	display: none;
 }
-.solution pre.prettyprint, .solution pre {
-	margin: 0.5rem;
-	background: white;
-	border-color: RGB(220, 220, 220);
-}
 body[data-show-solutions] .solution { display: block; }
 .solution > * { padding: 0.5rem; margin: 0; }
 .solution:before {
 	content: "Lösung";
-	background: seagreen;
+	background: var(--solution-primary);
 	color: white;
 	padding: 0.5rem;
 	width: 100%;
@@ -72,7 +73,7 @@ body[data-show-solutions] .solution { display: block; }
 /* code */
 pre code {
 	background: black;
-	color: lightgreen;
+	color: var(--solution-secondary);
 	font-weight: bold;
 	padding: 0.5rem;
 	display: block;
@@ -95,7 +96,7 @@ img[data-type="icon-difficult"] {
 
 blockquote {
 	padding: 10px;
-	border: thin solid blue;
+	border: thin solid var(--main-color);
 }
 
 
@@ -110,7 +111,7 @@ th, td {
 	padding: 0.25rem 0.5rem;
 }
 th {
-	background: rgb(0, 96, 160);
+	background: var(--main-color);
 	color: white;
 }
 th a {
@@ -153,6 +154,14 @@ li > pre {
 	padding: 0;
 }
 
+a {
+	color: var(--main-color);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
 dl {
 	margin: 0.5rem 0;
 }
@@ -175,7 +184,7 @@ dl dd {
 #showSolutions {
 	float: right;
 	font-size: 1.2rem;
-	background: linear-gradient(lightgreen, green);
+	background: linear-gradient(var(--solution-secondary), var(--solution-primary));
 	padding: 0.5rem 1rem;
 	border: none;
 	border-radius: 2rem;
